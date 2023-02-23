@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%; /* 1rem =10px; */
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -60,7 +64,7 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
   *,
   *::before,
