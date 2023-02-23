@@ -1,8 +1,6 @@
-@use '@styles/base/variables';
-
 .heading {
   font-weight: 800;
-  color: variables.$dark-brown;
+  color: $dark-brown;
 
   &--h1 {
     font-size: 7.2rem;
@@ -35,6 +33,6 @@
   }
 
   &--darkOrange {
-    color: variables.$dark-orange;
+    color: $dark-orange;
   }
 }

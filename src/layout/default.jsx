@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Epilogue } from "@next/font/google";
 import { TFooter, THeader } from "@organisms/index";
 
-const epilogue = Epilogue({ subsets: ["latin"] });
+//const epilogue = Epilogue({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
   return (
@@ -12,7 +12,7 @@ export default function Layout({ children }) {
         <title>Portfolio-test</title>
       </Head>
 
-      <div className={epilogue.className}>
+      <div>
         <THeader />
         <main>{children}</main>
         <TFooter />

@@ -1,10 +1,8 @@
-@use '@styles/base/variables';
-
 .text {
   font-size: 1.6rem;
   line-height: 3.2rem;
   font-weight: 400;
-  color: variables.$dark-brown;
+  color: $dark-brown;
 
   &--big {
     font-size: 2rem;
@@ -13,17 +11,17 @@
 
   &--small {
     font-size: 1.4rem;
-    line-height: 2.4px;
+    line-height: 2.4rem;
   }
 
   &--darkGrey {
-    color: variables.$dark-grey;
+    color: $dark-grey;
   }
 
   &--label {
     font-size: 1.2rem;
     line-height: 1.23rem;
     font-weight: 700;
-    color: variables.$dark-brown;
+    color: $dark-brown;
   }
 }
