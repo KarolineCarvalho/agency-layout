@@ -3,10 +3,9 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  /* sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-    prependData: `@import "index.scss";`,
-  }, */
+  sassOptions: {
+    additionalData: `@import "src/styles/main.scss";`,
+  },
 };
 
 module.exports = nextConfig;

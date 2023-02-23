@@ -5,6 +5,7 @@
       "@atoms/*": ["./src/components/atoms/*"],
       "@molecules/*": ["./src/components/molecules/*"],
       "@organisms/*": ["./src/components/organisms/*"],
+      "@layout/*": ["./src/layout/*"],
       "@styles/*": ["./src/styles/*"]
     }
   }

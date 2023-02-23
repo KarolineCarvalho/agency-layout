@@ -1,7 +1,7 @@
-import { THeader, TFooter } from "@/components/organisms";
 import Head from "next/head";
 
 import { Epilogue } from "@next/font/google";
+import { TFooter, THeader } from "@organisms/index";
 
 const epilogue = Epilogue({ subsets: ["latin"] });
 

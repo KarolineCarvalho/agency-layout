@@ -4,7 +4,7 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
-  @media (min-width: 850px) {
+  @include respond-to("md") {
     flex-direction: row;
     align-items: center;
   }
