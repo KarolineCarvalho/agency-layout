@@ -1,0 +1,40 @@
+@use '@styles/base/variables';
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid variables.$beige;
+  //border-bottom: none;
+  align-items: center;
+  padding: 45px 48px 38px;
+  //width: fit-content;
+
+  background-color: variables.$light-beige;
+  &:first-child {
+    border-radius: 6px 6px 0px 0px;
+  }
+  &:last-child {
+    border-radius: 0px 0px 6px 6px;
+    border-bottom: 1px solid variables.$beige;
+  }
+
+  &__value {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: variables.$dark-brown;
+  }
+
+  @media (min-width: 850px) {
+    //border-right: none;
+    align-items: initial;
+
+    &:first-child {
+      border-radius: 6px 0px 0px 6px;
+    }
+    &:last-child {
+      border-radius: 0px 6px 6px 0px;
+    }
+  }
+}

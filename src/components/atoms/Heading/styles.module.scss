@@ -1,0 +1,40 @@
+@use '@styles/base/variables';
+
+.heading {
+  font-weight: 800;
+  color: variables.$dark-brown;
+
+  &--h1 {
+    font-size: 7.2rem;
+    line-height: 8rem;
+    letter-spacing: -0.2rem;
+  }
+  &--h2 {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.1rem;
+  }
+
+  &--h3 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  &--h4 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  &--h5 {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+  }
+
+  &--darkOrange {
+    color: variables.$dark-orange;
+  }
+}
