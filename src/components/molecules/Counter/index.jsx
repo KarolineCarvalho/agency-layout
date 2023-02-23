@@ -13,7 +13,7 @@ const Counter = ({ counter, symbol, description }) => {
   };
 
   function abbrNum(number, decPlaces) {
-    if (number > 10000) {
+    if (number >= 10000) {
       // 2 decimal places => 100, 3 => 1000, etc
       decPlaces = Math.pow(10, decPlaces);
       // Enumerate number abbreviations
@@ -43,15 +43,13 @@ const Counter = ({ counter, symbol, description }) => {
   const animation = useSpring({
     val: counterValue,
     from: { val: 0 },
-    config: { mass: 1, tension: 6, friction: 5 },
+    config: { mass: 1, tension: 10, friction: 6 },
   });
   return (
     <div className={styles.counter}>
       <Heading level="3">
         <animated.span>
-          {animation.val.interpolate((val) =>
-            Math.floor(val).toLocaleString("de")
-          )}
+          {animation.val.to((val) => Math.floor(val).toLocaleString("de"))}
         </animated.span>
         {counterLetter}
         {symbol}

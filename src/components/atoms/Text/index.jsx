@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 
 const Text = ({ size, color, children }) => {
-  const classList = [];
+  const classList = [styles.text];
   classList.push(styles[`text--${size}`]);
   classList.push(styles[`text--${color}`]);
 

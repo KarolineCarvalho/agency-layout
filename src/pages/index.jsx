@@ -1,5 +1,5 @@
 import Counter from "@molecules/Counter";
-import CounterGrid from "@molecules/CounterGrid";
+import CounterGrid from "@atoms/CounterGrid";
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <CounterGrid>
         <Counter counter={42} symbol="%" description="Years of experience" />
         <Counter counter={73} symbol="+" description="Agency members" />
-        <Counter counter={5000} description="Projects complete" />
+        <Counter counter={"5000"} description="Projects complete" />
       </CounterGrid>
     </div>
   );
