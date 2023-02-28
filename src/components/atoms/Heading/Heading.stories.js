@@ -12,11 +12,11 @@ export default {
   argTypes: {
     level: { control: "-" },
     color: {
-      options: [0, 1],
-      mapping: ["", "darkOrange"],
+      options: [0, 1, 2],
+      mapping: ["", "darkOrange", "white"],
       control: {
         type: "inline-radio",
-        labels: ["Default", "Dark Orange"],
+        labels: ["Default", "Dark Orange", "White"],
       },
     },
   },

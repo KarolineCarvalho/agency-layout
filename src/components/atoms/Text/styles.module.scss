@@ -14,14 +14,22 @@
     line-height: 2.4rem;
   }
 
-  &--darkGrey {
-    color: $dark-grey;
-  }
-
   &--label {
     font-size: 1.2rem;
     line-height: 1.23rem;
     font-weight: 700;
     color: $dark-brown;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--lightGrey {
+    color: $light-grey;
+  }
+
+  &--lightBrown {
+    color: $light-brown;
   }
 }

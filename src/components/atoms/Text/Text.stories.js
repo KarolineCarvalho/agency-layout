@@ -12,11 +12,11 @@ export default {
   argTypes: {
     size: { control: "-" },
     color: {
-      options: [0, 1],
-      mapping: ["", "darkGrey"],
+      options: [0, 1, 2, 3],
+      mapping: ["", "lightBrown", "white", "lightGrey"],
       control: {
         type: "inline-radio",
-        labels: ["Default", "Dark Grey"],
+        labels: ["Default", "Light Brown", "White", "Light Grey"],
       },
     },
   },
