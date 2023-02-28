@@ -5,35 +5,38 @@
   border: 1px solid $beige;
   //border-bottom: none;
   align-items: center;
-  padding: 45px 48px 38px;
+  padding: 4.5rem 4.8rem 3.8rem;
   width: inherit;
   font-family: "Epilogue", sans-serif;
 
   background-color: $light-beige;
+  width: 100%;
+  max-height: 16.5rem;
   &:first-child {
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 0.6rem 0.6rem 0 0;
   }
   &:last-child {
-    border-radius: 0px 0px 6px 6px;
-    border-bottom: 1px solid $beige;
+    border-radius: 0 0 0.6rem 0.6rem;
+    //border-bottom: 1px solid $beige;
   }
 
   &__value {
     font-weight: 800;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 4rem;
+    line-height: 4.8rem;
     color: $dark-brown;
   }
 
-  @include respond-to("md") {
+  @include respond-to("lg") {
     //border-right: none;
     align-items: initial;
+    padding: 4.5rem 0.5rem 3.8rem 3.8rem;
 
     &:first-child {
-      border-radius: 6px 0px 0px 6px;
+      border-radius: 0.6rem 0 0 0.6rem;
     }
     &:last-child {
-      border-radius: 0px 6px 6px 0px;
+      border-radius: 0 0.6rem 0.6rem 0;
     }
   }
 }
