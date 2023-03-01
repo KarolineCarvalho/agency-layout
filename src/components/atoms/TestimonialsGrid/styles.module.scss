@@ -1,0 +1,15 @@
+.testimonialGrid {
+  columns: 1;
+  column-gap: 0;
+  @include respond-to("lg") {
+    columns: 2;
+  }
+}
+
+.subContainer {
+  transform: scaleY(-1);
+}
+.subContainer > :first-child,
+.subContainer > :last-child {
+  transform: rotateX(180deg);
+}

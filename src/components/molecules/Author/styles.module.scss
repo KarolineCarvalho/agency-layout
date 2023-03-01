@@ -1,0 +1,10 @@
+.author {
+  display: grid;
+  grid-template: repeat(2, 1fr) / 8rem 1fr;
+  column-gap: 2.4rem;
+  font-family: "Epilogue", sans-serif;
+
+  &__avatar {
+    grid-row: span 2;
+  }
+}

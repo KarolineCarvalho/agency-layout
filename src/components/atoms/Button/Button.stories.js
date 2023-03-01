@@ -4,6 +4,9 @@ export default {
   component: Button,
   title: "Atoms/Button",
   tags: ["autodocs"],
+  argTypes: {
+    type: { control: "-" },
+  },
 };
 
 const Template = (args) => (

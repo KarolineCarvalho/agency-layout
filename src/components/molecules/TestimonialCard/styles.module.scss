@@ -1,0 +1,14 @@
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 4.8rem 2.8rem;
+  border: 0.1rem solid #f3d1bf;
+  box-shadow: 0 3.2rem 6.4rem rgba(57, 20, 0, 0.04);
+  border-radius: 0.6rem 0.6rem 0 0;
+  font-family: "Epilogue", sans-serif;
+
+  @include respond-to(md) {
+    padding: 4.8rem;
+  }
+}
