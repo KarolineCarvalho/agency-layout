@@ -3,6 +3,11 @@ import styles from "./styles.module.scss";
 import { calculateRate, renderNtimes } from "@utils/index";
 
 const Rating = ({ rate }) => {
+  //temporary
+  if (rate > 10) {
+    rate = 10;
+  }
+  //
   return (
     <div className={styles.stars}>
       {renderNtimes(5, "star.svg", "star")}

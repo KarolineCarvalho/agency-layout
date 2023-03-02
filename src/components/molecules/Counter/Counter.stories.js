@@ -18,7 +18,7 @@ Default.args = {
 export const Abbreviate = Template.bind({});
 Abbreviate.args = {
   ...Default.args,
-  counter: 1000000,
+  counter: 100000,
 };
 
 export const NoSymbol = Template.bind({});
