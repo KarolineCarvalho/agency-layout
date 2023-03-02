@@ -1,6 +1,7 @@
 .testimonialGrid {
   columns: 1;
   column-gap: 0;
+
   @include respond-to("lg") {
     columns: 2;
   }

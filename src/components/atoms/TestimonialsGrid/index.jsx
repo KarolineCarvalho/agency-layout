@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss";
 
 const TestimonialGrid = ({ children }) => {
-  console.log(children);
   return (
     <div className={styles.testimonialGrid}>
       {children[0]}

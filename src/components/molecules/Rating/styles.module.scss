@@ -1,6 +1,5 @@
 @mixin show-rate() {
   .rateBallon {
-    animation-duration: 50s;
     display: block;
   }
 }
@@ -9,6 +8,7 @@
   position: relative;
   display: flex;
   column-gap: 0.8rem;
+  width: fit-content;
 
   &__rate {
     position: absolute;
@@ -50,13 +50,4 @@
     transform: rotate(45deg);
     z-index: -1;
   }
-}
-
-.blurred {
-  background: gray;
-  filter: blur(20px);
-  position: relative;
-  //top: -315px;
-  /* 	transform: scale(1.05); */
-  z-index: -1;
 }

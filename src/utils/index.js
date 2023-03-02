@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const convertToNumber = (counter) => {
   if (typeof counter === "string") {
     return Number(counter);
@@ -30,4 +32,37 @@ export function abbrvNum(number, decPlaces) {
   }
 
   return [number, conterAbbrev];
+}
+
+export function renderNtimes(times, img, keyBase) {
+  const number = [...Array(times)];
+  return number.map((_, index) => (
+    <Image
+      height={24}
+      width={24}
+      src={`images/${img}`}
+      key={keyBase + index}
+      alt="Rating Star"
+    />
+  ));
+}
+
+export function calculateRate(rate) {
+  if (rate > 10) {
+    rate = 10;
+  }
+  let dividedByTwo = rate / 2;
+  const isInt = dividedByTwo % 1 === 0;
+
+  if (isInt) {
+    return renderNtimes(dividedByTwo, "star-filled.svg", "filledStar");
+  } else {
+    const intPortion = Math.floor(dividedByTwo);
+    return (
+      <>
+        {renderNtimes(intPortion, "star-filled.svg", "filledStar")}
+        {renderNtimes(1, "star-half.svg", "halfStar")}
+      </>
+    );
+  }
 }
