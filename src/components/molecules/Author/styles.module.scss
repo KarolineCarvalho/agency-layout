@@ -1,6 +1,6 @@
 .author {
   display: grid;
-  grid-template: repeat(2, 1fr) / 8rem 1fr;
+  grid-template: repeat(2, min-content) / 8rem 1fr;
   column-gap: 2.4rem;
   font-family: "Epilogue", sans-serif;
 

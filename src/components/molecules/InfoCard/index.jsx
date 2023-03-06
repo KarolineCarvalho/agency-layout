@@ -3,6 +3,7 @@ import styles from "./styles.module.scss";
 
 import Text from "@atoms/Text";
 import Button from "@atoms/Button";
+import TitleSection from "@molecules/TitleSection";
 
 const InfoCard = ({
   theme,
@@ -16,24 +17,18 @@ const InfoCard = ({
   const appTheme =
     theme === "dark"
       ? {
-          titleColor: "white",
           subtitleColor: "white",
           descriptionColor: "lightGrey",
         }
       : {
-          titleColor: "",
           subtitleColor: "",
           descriptionColor: "lightBrown",
         };
 
   return (
     <div className={styles.infoCard}>
-      <Heading level="5" color="darkOrange">
-        {label}
-      </Heading>
-      <Heading color={appTheme.titleColor} level="2">
-        {title}
-      </Heading>
+      <TitleSection label={label} title={title} align="left" theme={theme} />
+
       <Text color={appTheme.subtitleColor} size="big">
         {subtitle}
       </Text>

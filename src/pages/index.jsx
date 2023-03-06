@@ -1,8 +1,10 @@
+import styles from "../styles/Home.module.scss";
 import Counter from "@molecules/Counter";
 import CounterGrid from "@atoms/CounterGrid";
 import Hero from "@organisms/Hero";
 import TestimonialCard from "@molecules/TestimonialCard";
 import TestimonialGrid from "@atoms/TestimonialsGrid";
+import TitleSection from "@molecules/TitleSection";
 
 const Home = () => {
   const testimonials = [
@@ -41,18 +43,21 @@ const Home = () => {
   ];
   return (
     <div>
-      <TestimonialGrid>
-        {testimonials.map((i) => (
-          <TestimonialCard
-            key={i.name}
-            rate={i.rate}
-            comment={i.comment}
-            photo={i.photo}
-            name={i.name}
-            job={i.job}
-          />
-        ))}
-      </TestimonialGrid>
+      <section className={styles.testimonialsSection}>
+        <TitleSection label="Testimonials" title="What Our Clients Say" />
+        <TestimonialGrid>
+          {testimonials.map((i) => (
+            <TestimonialCard
+              key={i.name}
+              rate={i.rate}
+              comment={i.comment}
+              photo={i.photo}
+              name={i.name}
+              job={i.job}
+            />
+          ))}
+        </TestimonialGrid>
+      </section>
       <Hero
         label="about"
         title="An Experience Design Agency"
