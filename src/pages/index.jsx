@@ -42,7 +42,7 @@ const Home = () => {
     },
   ];
   return (
-    <div>
+    <div className={styles.home}>
       <Hero
         theme="dark"
         label="about"
@@ -63,28 +63,29 @@ const Home = () => {
         imgName="hero-light-theme"
         imgType="png"
       />
+      <div className={styles.home__content}>
+        <CounterGrid>
+          <Counter counter={42} symbol="%" description="Years of experience" />
+          <Counter counter={73} symbol="+" description="Agency members" />
+          <Counter counter={"5000"} description="Projects complete" />
+        </CounterGrid>
 
-      <CounterGrid>
-        <Counter counter={42} symbol="%" description="Years of experience" />
-        <Counter counter={73} symbol="+" description="Agency members" />
-        <Counter counter={"5000"} description="Projects complete" />
-      </CounterGrid>
-
-      <section className={styles.testimonialsSection}>
-        <TitleSection label="Testimonials" title="What Our Clients Say" />
-        <TestimonialGrid>
-          {testimonials.map((i) => (
-            <TestimonialCard
-              key={i.name}
-              rate={i.rate}
-              comment={i.comment}
-              photo={i.photo}
-              name={i.name}
-              job={i.job}
-            />
-          ))}
-        </TestimonialGrid>
-      </section>
+        <section className={styles.testimonialsSection}>
+          <TitleSection label="Testimonials" title="What Our Clients Say" />
+          <TestimonialGrid>
+            {testimonials.map((i) => (
+              <TestimonialCard
+                key={i.name}
+                rate={i.rate}
+                comment={i.comment}
+                photo={i.photo}
+                name={i.name}
+                job={i.job}
+              />
+            ))}
+          </TestimonialGrid>
+        </section>
+      </div>
     </div>
   );
 };

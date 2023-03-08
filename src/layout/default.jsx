@@ -10,7 +10,7 @@ export default function Layout({ children }) {
       </Head>
 
       <THeader />
-      <main style={{ maxWidth: "1440px", margin: "0 auto" }}>{children}</main>
+      <main>{children}</main>
       <TFooter />
     </>
   );

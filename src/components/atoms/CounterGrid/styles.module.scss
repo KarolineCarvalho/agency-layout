@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  //width: 90%;
+
   margin: 0 auto;
   @include respond-to("lg") {
     flex-direction: row;
     align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
   }
 }

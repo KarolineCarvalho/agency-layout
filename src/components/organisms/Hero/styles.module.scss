@@ -1,31 +1,32 @@
 .hero {
-  display: grid;
-  grid-template: minmax(30rem, 34rem) 1fr / 1fr;
-  justify-items: center;
-  row-gap: 1.6rem;
-  padding: 7.1rem 2.3rem 5.6rem;
   background-color: $light-beige;
-
   &--dark {
     background-color: $dark-blue;
   }
 
-  &__image {
-    height: 100%;
-    object-fit: contain;
-  }
+  &__content {
+    display: grid;
+    grid-template: minmax(30rem, 34rem) 1fr / 1fr;
+    justify-items: center;
+    row-gap: 1.6rem;
+    padding: 7.1rem 0 5.6rem;
+    @include max-width;
+    .hero__image {
+      height: 100%;
+      object-fit: contain;
+    }
 
-  @include respond-to("lg") {
-    grid-template-areas: "img info";
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(15rem, 55.5rem) 1fr;
-    column-gap: 5%;
+    @include respond-to("md") {
+      grid-template-areas: "img info";
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      column-gap: 5%;
+      padding: 7.1rem 0 5.6rem;
 
-    padding: 7.1rem 6.5rem 5.6rem;
-
-    &__info {
-      grid-area: info;
-      padding-top: 8rem;
+      .hero__info {
+        grid-area: info;
+        padding-top: 8rem;
+      }
     }
   }
 }
