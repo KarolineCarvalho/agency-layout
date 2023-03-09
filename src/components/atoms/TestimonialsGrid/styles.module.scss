@@ -12,7 +12,6 @@
 .subContainer {
   transform: scaleY(-1);
 }
-.subContainer > :first-child,
-.subContainer > :last-child {
+.subContainer > :nth-child(n) {
   transform: rotateX(180deg);
 }

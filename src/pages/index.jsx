@@ -5,6 +5,8 @@ import Hero from "@organisms/Hero";
 import TestimonialCard from "@molecules/TestimonialCard";
 import TestimonialGrid from "@atoms/TestimonialsGrid";
 import TitleSection from "@molecules/TitleSection";
+import ImageCard from "@molecules/ImageCard";
+import ImageCardGrid from "@atoms/ImageCardGrid";
 
 const Home = () => {
   const testimonials = [
@@ -40,6 +42,17 @@ const Home = () => {
       job: "Whochat",
       photo: "/images/testimonial-4.png",
     },
+  ];
+  const cardImages = [
+    {
+      label: "Branding",
+      title: "KeyBoard",
+      image: "images/imageCard-1.png",
+    },
+    { label: "Design", title: "SOFA", image: "" },
+    { label: "Illustration", title: "Work Media", image: "" },
+    { label: "Motion", title: "DDDone", image: "" },
+    { label: "Branding", title: "HandP", image: "", featured: true },
   ];
   return (
     <div className={styles.home}>
@@ -85,6 +98,17 @@ const Home = () => {
             ))}
           </TestimonialGrid>
         </section>
+        <ImageCardGrid>
+          {cardImages.map((item, index) => (
+            <ImageCard
+              key={item.label + index}
+              label={item.label}
+              title={item.title}
+              image={item.image}
+              featured={item.featured}
+            />
+          ))}
+        </ImageCardGrid>
       </div>
     </div>
   );

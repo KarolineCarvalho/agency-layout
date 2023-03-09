@@ -1,0 +1,56 @@
+@mixin zoom-background {
+  .imageCard__background {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+}
+
+.imageCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 2rem;
+  font-family: "Epilogue", sans-serif;
+  padding: 0 2.8rem 5rem 2.8rem;
+  height: 41.6rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 1rem;
+  cursor: pointer;
+  &:hover {
+    @include zoom-background();
+  }
+
+  &__background {
+    position: absolute;
+    background-color: $dark-orange;
+    z-index: -1;
+    transition: transform 0.6s, opacity 0.6s;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &--featured {
+    order: -1;
+  }
+
+  @include respond-to("md") {
+    &--featured {
+      grid-column: span 2;
+      height: 100%;
+    }
+  }
+}
+
+.tag {
+  width: fit-content;
+  background-color: $white;
+  border-radius: 2rem;
+  padding: 0 1.6rem;
+  vertical-align: middle;
+}
