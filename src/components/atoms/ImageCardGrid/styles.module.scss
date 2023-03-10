@@ -1,16 +1,31 @@
 .imageCardGrid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: 41.6rem;
   row-gap: 3.2rem;
   column-gap: 3rem;
+  margin: 3rem 0;
 
-  @include respond-to("md") {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50rem;
-    grid-auto-rows: 1fr;
-    @include respond-to("lg") {
-      grid-template-rows: 72rem;
+  &--featuredImage {
+    @include respond-to("md") {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 50rem repeat(2, 41.6rem);
+      //grid-auto-rows: 0;
+      //overflow: hidden;
+      //grid-auto-rows: 1fr;
+
+      @include respond-to("lg") {
+        grid-template-rows: 72rem repeat(2, 41.6rem);
+      }
+    }
+  }
+
+  &--threeCol {
+    @include respond-to("md") {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 41.6rem);
+      grid-auto-rows: 0;
+      overflow-y: hidden;
     }
   }
 }

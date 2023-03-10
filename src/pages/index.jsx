@@ -48,11 +48,36 @@ const Home = () => {
       label: "Branding",
       title: "KeyBoard",
       image: "images/imageCard-1.png",
+      featured: true,
     },
-    { label: "Design", title: "SOFA", image: "" },
-    { label: "Illustration", title: "Work Media", image: "" },
-    { label: "Motion", title: "DDDone", image: "" },
-    { label: "Branding", title: "HandP", image: "", featured: true },
+    { label: "Design", title: "SOFA", image: "images/imageCard-2.png" },
+    {
+      label: "Illustration",
+      title: "Work Media",
+      image: "images/imageCard-3.png",
+    },
+    { label: "Motion", title: "DDDone", image: "images/imageCard-4.png" },
+    { label: "Branding", title: "HandP", image: "images/imageCard-5.png" },
+  ];
+
+  const cardsThreeCol = [
+    {
+      label: "Branding",
+      title: "KeyBoard",
+      image: "images/imageCard-1.png",
+    },
+    { label: "Design", title: "SOFA", image: "images/imageCard-2.png" },
+    {
+      label: "Illustration",
+      title: "Work Media",
+      image: "images/imageCard-3.png",
+    },
+    { label: "Motion", title: "DDDone", image: "images/imageCard-4.png" },
+    { label: "Branding", title: "HandP", image: "images/imageCard-5.png" },
+    { label: "Design", title: "Abstract", image: "images/imageCard-6.png" },
+    { label: "Motion", title: "Architect", image: "images/imageCard-7.png" },
+    { label: "Design", title: "CalC", image: "images/imageCard-8.png" },
+    { label: "Branding", title: "Sport", image: "images/imageCard-9.png" },
   ];
   return (
     <div className={styles.home}>
@@ -98,7 +123,7 @@ const Home = () => {
             ))}
           </TestimonialGrid>
         </section>
-        <ImageCardGrid>
+        <ImageCardGrid gridVariation="featuredImage">
           {cardImages.map((item, index) => (
             <ImageCard
               key={item.label + index}

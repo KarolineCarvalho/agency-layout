@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
-import Text from "@atoms/Text";
 import Heading from "@atoms/Heading";
+import Tag from "@atoms/Tag";
 
 const ImageCard = ({ label, title, image, featured }) => {
   return (
@@ -14,9 +14,8 @@ const ImageCard = ({ label, title, image, featured }) => {
         alt="Card Background"
         src={image}
       />
-      <div className={styles.tag}>
-        <Text>{label}</Text>
-      </div>
+
+      <Tag label={label} />
       <Heading level="3" color="white">
         {title}
       </Heading>

@@ -11,17 +11,13 @@
   flex-direction: column;
   justify-content: flex-end;
   row-gap: 2rem;
-  font-family: "Epilogue", sans-serif;
-  padding: 0 2.8rem 5rem 2.8rem;
-  height: 41.6rem;
   width: 100%;
-  overflow: hidden;
   z-index: 5;
+  padding: 0 2.8rem 5rem 2.8rem;
   border-radius: 1rem;
+  overflow: hidden;
+  font-family: "Epilogue", sans-serif;
   cursor: pointer;
-  &:hover {
-    @include zoom-background();
-  }
 
   &__background {
     position: absolute;
@@ -39,18 +35,14 @@
     order: -1;
   }
 
+  &:hover {
+    @include zoom-background();
+  }
+
   @include respond-to("md") {
     &--featured {
       grid-column: span 2;
       height: 100%;
     }
   }
-}
-
-.tag {
-  width: fit-content;
-  background-color: $white;
-  border-radius: 2rem;
-  padding: 0 1.6rem;
-  vertical-align: middle;
 }

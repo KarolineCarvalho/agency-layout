@@ -2,10 +2,8 @@
   margin: auto;
 
   @include respond-to("xs") {
-    max-width: 330px;
-  }
-  @include respond-to("sm") {
-    max-width: 500px;
+    //max-width: 330px;
+    padding: 0 2rem;
   }
   @include respond-to("md") {
     max-width: 750px;

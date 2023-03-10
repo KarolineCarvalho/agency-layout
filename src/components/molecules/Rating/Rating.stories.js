@@ -2,7 +2,7 @@ import Rating from ".";
 
 export default {
   component: Rating,
-  title: "Atoms/Rating",
+  title: "Molecules/Rating",
   tags: ["autodocs"],
   args: {
     rate: 5,
