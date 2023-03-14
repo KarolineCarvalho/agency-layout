@@ -4,7 +4,7 @@
   grid-auto-rows: 41.6rem;
   row-gap: 3.2rem;
   column-gap: 3rem;
-  margin: 3rem 0;
+  padding: 3rem 0;
 
   &--featuredImage {
     @include respond-to("md") {

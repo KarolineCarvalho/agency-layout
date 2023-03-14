@@ -3,6 +3,7 @@
   line-height: 3.2rem;
   font-weight: 400;
   color: $dark-brown;
+  width: fit-content;
 
   &--big {
     font-size: 2rem;
@@ -31,5 +32,9 @@
 
   &--lightBrown {
     color: $light-brown;
+  }
+
+  &--pointer {
+    cursor: pointer;
   }
 }

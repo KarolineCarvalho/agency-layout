@@ -1,0 +1,9 @@
+.line {
+  height: 1px;
+  width: 100%;
+  border-color: $beige;
+  background-color: $beige;
+  color: $beige;
+  grid-column: span 4;
+  align-self: center;
+}
