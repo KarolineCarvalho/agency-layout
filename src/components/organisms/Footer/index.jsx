@@ -2,6 +2,7 @@ import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 import Line from "@atoms/Line";
+import CategoryList from "@molecules/CategoryList";
 
 const menuList = [
   {
@@ -26,16 +27,7 @@ const Footer = () => {
         <Heading level="4">Agency</Heading>
 
         {menuList.map((i) => (
-          <div key={i.title} className={styles.footer__list}>
-            <Heading level="5" color="darkOrange">
-              {i.title}
-            </Heading>
-            {i.items.map((item) => (
-              <Text key={item} pointer>
-                {item}
-              </Text>
-            ))}
-          </div>
+          <CategoryList key={i.title} title={i.title} items={i.items} />
         ))}
 
         <div className={styles.footer__social}>

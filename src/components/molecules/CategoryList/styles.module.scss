@@ -1,0 +1,14 @@
+.categoryList {
+  display: grid;
+  grid-template-rows: 4rem;
+  grid-auto-rows: 1fr;
+  grid-auto-rows: min-content;
+  justify-items: center;
+  &--left {
+    justify-items: start;
+  }
+
+  @include respond-to("md") {
+    justify-items: start;
+  }
+}

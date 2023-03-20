@@ -1,0 +1,48 @@
+.articleHero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 2.5rem;
+  margin: 3rem auto 0;
+  max-width: 57rem;
+  font-family: "Epilogue", sans-serif;
+  justify-items: start;
+
+  &__infos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "list"
+      "project"
+      "date";
+    margin-top: 5.4rem;
+    row-gap: 3rem;
+    justify-items: start;
+  }
+  &__infoItem {
+    &:nth-child(1) {
+      grid-area: list;
+    }
+    &:nth-child(2) {
+      grid-area: project;
+    }
+    &:nth-child(3) {
+      grid-area: date;
+    }
+  }
+
+  @include respond-to("md") {
+    grid-template: repeat(4, auto) / 1fr;
+    row-gap: 3rem;
+    &__infos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "list project"
+        "list date";
+      margin-top: 5.4rem;
+    }
+  }
+}

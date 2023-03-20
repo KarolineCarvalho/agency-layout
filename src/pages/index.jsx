@@ -7,6 +7,7 @@ import TestimonialGrid from "@atoms/TestimonialsGrid";
 import TitleSection from "@molecules/TitleSection";
 import ImageCard from "@molecules/ImageCard";
 import ImageCardGrid from "@atoms/ImageCardGrid";
+import ArticleHero from "@organisms/ArticleHero";
 
 const Home = () => {
   const testimonials = [
@@ -134,6 +135,7 @@ const Home = () => {
             />
           ))}
         </ImageCardGrid>
+        <ArticleHero />
       </div>
     </div>
   );
