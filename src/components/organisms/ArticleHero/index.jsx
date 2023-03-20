@@ -39,7 +39,12 @@ const ArticleHero = (props) => {
           <Heading level="5" color="darkOrange">
             Vortex
           </Heading>
-          <Image src="/images/vortex.png" width={108} height={32} />
+          <Image
+            src="/images/vortex.png"
+            width={108}
+            height={32}
+            alt="Client's Project Logo"
+          />
         </div>
         <span className={styles.articleHero__infoItem}>
           <CategoryList title="Date" items={["Dec 2021"]} align="left" />
