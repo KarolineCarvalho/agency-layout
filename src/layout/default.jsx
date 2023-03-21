@@ -1,6 +1,6 @@
+import Footer from "@organisms/Footer";
+import Header from "@organisms/Header";
 import Head from "next/head";
-
-import { TFooter, THeader } from "@organisms/index";
 
 export default function Layout({ children }) {
   return (
@@ -8,10 +8,9 @@ export default function Layout({ children }) {
       <Head>
         <title>Portfolio-test</title>
       </Head>
-
-      <THeader />
+      <Header />
       <main>{children}</main>
-      <TFooter />
+      <Footer />
     </>
   );
 }
