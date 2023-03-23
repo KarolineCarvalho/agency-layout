@@ -13,8 +13,8 @@ const Header = () => {
   };
   const stopScroll = () => {
     !isMenuOpen
-      ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset");
+      ? (document.body.scroll = "no")
+      : (document.body.style.position = "unset");
   };
   return (
     <header className={styles.header}>

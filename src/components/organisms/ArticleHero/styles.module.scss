@@ -32,7 +32,7 @@
     }
   }
 
-  @include respond-to("md") {
+  @include respond-to("sm") {
     grid-template: repeat(4, auto) / 1fr;
     row-gap: 3rem;
     &__infos {

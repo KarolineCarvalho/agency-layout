@@ -35,17 +35,18 @@ const ArticleHero = (props) => {
             align="left"
           />
         </span>
-        <div className={styles.articleHero__infoItem}>
-          <Heading level="5" color="darkOrange">
-            Vortex
-          </Heading>
-          <Image
-            src="/images/vortex.png"
-            width={108}
-            height={32}
-            alt="Client's Project Logo"
+        <span className={styles.articleHero__infoItem}>
+          <CategoryList
+            title="Vortex"
+            align="left"
+            image={{
+              src: "/images/vortex.png",
+              width: 108,
+              height: 32,
+              alt: "Client's Project Logo",
+            }}
           />
-        </div>
+        </span>
         <span className={styles.articleHero__infoItem}>
           <CategoryList title="Date" items={["Dec 2021"]} align="left" />
         </span>

@@ -27,7 +27,12 @@ const Footer = () => {
         <Heading level="4">Agency</Heading>
 
         {menuList.map((i) => (
-          <CategoryList key={i.title} title={i.title} items={i.items} />
+          <CategoryList
+            key={i.title}
+            title={i.title}
+            items={i.items}
+            pointer={true}
+          />
         ))}
 
         <div className={styles.footer__social}>
