@@ -2,7 +2,6 @@ import Heading from "@atoms/Heading";
 import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 import CategoryList from "@molecules/CategoryList";
-import Image from "next/image";
 
 const ArticleHero = (props) => {
   const category = {

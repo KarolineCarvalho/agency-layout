@@ -1,9 +1,9 @@
-import TFooter from ".";
+import Header from ".";
 
 // eslint-disable-next-line storybook/story-exports
 export default {
-  title: "Organisms/T-Footer",
-  component: TFooter,
+  title: "Organisms/Header",
+  component: Header,
   tags: [],
   argTypes: {},
 };

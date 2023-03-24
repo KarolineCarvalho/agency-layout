@@ -9,7 +9,7 @@ const Header = () => {
   const openMenu = isMenuOpen ? "header__menu--open" : "";
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    stopScroll();
+    /* stopScroll(); */
   };
   const stopScroll = () => {
     !isMenuOpen
