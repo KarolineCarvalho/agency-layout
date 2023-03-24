@@ -11,24 +11,6 @@
     row-gap: 5rem;
   }
 
-  &__social {
-    display: flex;
-    column-gap: 0.8rem;
-    margin: 1rem 0;
-    width: fit-content;
-
-    .socialMedia {
-      display: flex;
-      width: 4.8rem;
-      height: 4.8rem;
-      justify-content: center;
-      align-items: center;
-      border-radius: 3rem;
-      background-color: $dark-orange;
-      cursor: pointer;
-    }
-  }
-
   &__copyright {
     grid-column: span 2;
     padding: 0 3rem;
@@ -60,9 +42,6 @@
       justify-self: end;
 
       //margin: 4.3rem 0;
-    }
-    &__social {
-      justify-self: end;
     }
   }
 }

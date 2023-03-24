@@ -11,10 +11,6 @@
     row-gap: 1.6rem;
     padding: 7.1rem 0 5.6rem;
     @include max-width;
-    .hero__image {
-      height: 100%;
-      object-fit: contain;
-    }
 
     @include respond-to("md") {
       grid-template-areas: "img info";

@@ -6,14 +6,14 @@ import { useState } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const openMenu = isMenuOpen ? "header__mobile--open" : "";
+  const openMenu = isMenuOpen ? "header__menu--open" : "";
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     stopScroll();
   };
   const stopScroll = () => {
     !isMenuOpen
-      ? (document.body.scroll = "no")
+      ? (document.body.style.position = "fixed")
       : (document.body.style.position = "unset");
   };
   return (
@@ -21,19 +21,13 @@ const Header = () => {
       <div className={styles.header__content}>
         <Logo />
 
-        <ul className={styles.header__nav}>
-          <li className={styles.header__navItem}>About</li>
-          <li className={styles.header__navItem}>Services</li>
-          <li className={styles.header__navItem}>Pricing</li>
-          <li className={styles.header__navItem}>Blog</li>
+        <ul className={`${styles.header__menu} ${styles[openMenu]}`}>
+          <li className={styles.header__menuItem}>About</li>
+          <li className={styles.header__menuItem}>Services</li>
+          <li className={styles.header__menuItem}>Pricing</li>
+          <li className={styles.header__menuItem}>Blog</li>
         </ul>
 
-        <ul className={`${styles.header__mobile} ${styles[openMenu]}`}>
-          <li className={styles.header__mobileItem}>About</li>
-          <li className={styles.header__mobileItem}>Services</li>
-          <li className={styles.header__mobileItem}>Pricing</li>
-          <li className={styles.header__mobileItem}>Blog</li>
-        </ul>
         <span className={styles.header__contact}>
           <Button label="Contact" type="noBackground" />
         </span>

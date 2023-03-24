@@ -6,9 +6,9 @@ import Text from "@atoms/Text";
 const Author = ({ photo, name, job }) => {
   return (
     <div className={styles.author}>
-      <div className={styles.author__avatar}>
+      <span className={styles.author__avatar}>
         <Avatar image={photo} />
-      </div>
+      </span>
       <Heading level="4">{name}</Heading>
       <Text>{job}</Text>
     </div>

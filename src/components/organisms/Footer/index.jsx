@@ -3,22 +3,8 @@ import styles from "./styles.module.scss";
 import Text from "@atoms/Text";
 import Line from "@atoms/Line";
 import CategoryList from "@molecules/CategoryList";
-
-const menuList = [
-  {
-    title: "Menu",
-    items: ["About", "Services", "Blog", "Contact"],
-  },
-  {
-    title: "Serivce",
-    items: ["Design", "Development", "Marketing", "See More"],
-  },
-];
-const socialMedia = [
-  { alt: "Facebook Logo", src: "images/facebook.png" },
-  { alt: "Twitter Logo", src: "images/twitter.png" },
-  { alt: "Instagram Logo", src: "images/instagram.png" },
-];
+import SocialMedias from "@molecules/SocialMedias";
+import { menuList, socialMedia } from "@data/index.js";
 
 const Footer = () => {
   return (
@@ -35,13 +21,7 @@ const Footer = () => {
           />
         ))}
 
-        <div className={styles.footer__social}>
-          {socialMedia.map((item) => (
-            <div className={styles.socialMedia} key={item.alt}>
-              <img src={item.src} alt={item.alt} />
-            </div>
-          ))}
-        </div>
+        <SocialMedias socialMediaArray={socialMedia} />
 
         <Line />
 

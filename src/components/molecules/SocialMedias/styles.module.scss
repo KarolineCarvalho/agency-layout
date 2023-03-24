@@ -1,0 +1,9 @@
+.socialMediaGrid {
+  display: flex;
+  column-gap: 0.8rem;
+  margin: 1rem 0;
+  width: fit-content;
+  @include respond-to("md") {
+    justify-self: end;
+  }
+}
