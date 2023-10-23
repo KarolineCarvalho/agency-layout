@@ -14,6 +14,10 @@ This was also the first time I used Storybook to create a documentation of the c
 
 
 ## Screenshots
+![home banner screenshot](https://github.com/KarolineCarvalho/agency-layout/assets/76600472/ec8ce673-a3f7-4792-9306-69b095b671c0)
 
-![home banner screenshot](https://github.com/KarolineCarvalho/agency-layout/assets/76600472/ee8eb383-269f-4799-8716-396a21430585)
+## Deploy
+
+[Components - Storybook](https://agency-layout.vercel.app/?path=/docs/introduction--docs)
+
 
