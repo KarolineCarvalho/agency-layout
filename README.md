@@ -1,7 +1,7 @@
 
 # Agency Layout
 
-I made this project a few months ago to practice development of a project from scratch trying to put in use what I had learnt. 
+I made this project a few months ago to practice development of a project from scratch trying to put in use what I had learned. 
 
 This was also the first time I used Storybook to create a documentation of the components. It was a great experience and I learnt a lot with it.
 
